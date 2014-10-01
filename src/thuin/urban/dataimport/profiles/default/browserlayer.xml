@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<layers>
+  <layer
+      name="thuin.urban.dataimport"
+      interface="thuin.urban.dataimport.interfaces.IThuinUrbanDataimportLayer"
+  />
+</layers>
