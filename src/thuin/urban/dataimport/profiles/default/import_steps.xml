@@ -2,11 +2,11 @@
 <import-steps>
 
  <import-step
-    id="thuin.urban.dataimport-thuinAgorawinImport"
-    handler="thuin.urban.dataimport.importer.importThuinAgorawin"
-    title="Agorawin import for Thuin"
+    id="thuin.urban.dataimport-thuinUrbawebImport"
+    handler="thuin.urban.dataimport.importer.importThuinUrbaweb"
+    title="Urbaweb import for Thuin"
     version="2013-01-04T11:30:41.455297">
-  Agorawin import for Thuin
+  Urbaweb import for Thuin
  </import-step>
 
 </import-steps>

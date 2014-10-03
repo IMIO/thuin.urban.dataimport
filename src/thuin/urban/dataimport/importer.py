@@ -34,7 +34,7 @@ class ThuinValuesMapping(ValuesMapping):
         return valuesmapping.VALUES_MAPS.get(mapping_name, None)
 
 
-def importThuinAgorawin(context, db_name='tab_urba_97.mdb'):
+def importThuinUrbaweb(context, db_name='tab_urba_97.mdb'):
     if context.readDataFile('thuinurbandataimport_marker.txt') is None:
         return
 
