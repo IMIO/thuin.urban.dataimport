@@ -1,11 +1,11 @@
 # -*- coding: utf-8 -*-
 
-from thuin.urban.dataimport.access.mapper import AccessMapper as Mapper
-from thuin.urban.dataimport.access.mapper import AccessPostCreationMapper as PostCreationMapper
-from thuin.urban.dataimport.access.mapper import AccessFinalMapper as FinalMapper
+from imio.urban.dataimport.access.mapper import AccessMapper as Mapper
+from imio.urban.dataimport.access.mapper import AccessPostCreationMapper as PostCreationMapper
+from imio.urban.dataimport.access.mapper import AccessFinalMapper as FinalMapper
 
-from thuin.urban.dataimport.factory import BaseFactory, MultiObjectsFactory
-from thuin.urban.dataimport.utils import cleanAndSplitWord
+from imio.urban.dataimport.factory import BaseFactory, MultiObjectsFactory
+from imio.urban.dataimport.utils import cleanAndSplitWord
 from DateTime import DateTime
 from Products.CMFPlone.utils import normalizeString
 from Products.CMFCore.utils import getToolByName

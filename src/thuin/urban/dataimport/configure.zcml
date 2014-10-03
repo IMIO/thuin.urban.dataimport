@@ -37,14 +37,14 @@
     <adapter
         for="thuin.urban.dataimport.interfaces.IThuinDataImporter"
         factory=".importer.ThuinMapping"
-        provides="thuin.urban.dataimport.interfaces.IObjectsMapping"
+        provides="imio.urban.dataimport.interfaces.IObjectsMapping"
         name="objects mapping"
         />
 
     <adapter
         for="thuin.urban.dataimport.interfaces.IThuinDataImporter"
         factory=".importer.ThuinValuesMapping"
-        provides="thuin.urban.dataimport.interfaces.IValuesMapping"
+        provides="imio.urban.dataimport.interfaces.IValuesMapping"
         name="values mapping"
         />
 

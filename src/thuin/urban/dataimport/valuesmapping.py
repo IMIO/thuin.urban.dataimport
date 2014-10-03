@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-from thuin.urban.dataimport.mapping import table
+from imio.urban.dataimport.mapping import table
 
 VALUES_MAPS = {
 

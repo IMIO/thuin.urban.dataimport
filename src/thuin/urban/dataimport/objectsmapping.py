@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-from thuin.urban.dataimport.profiles.thuinAgorawin.mappers import LicenceFactory, \
+from thuin.urban.dataimport.mappers import LicenceFactory, \
     PortalTypeMapper, IdMapper, ReferenceMapper, WorklocationMapper, ObservationsMapper, \
     ArchitectMapper, GeometricianMapper, CompletionStateMapper, ContactFactory, ContactNameMapper, \
     ContactTitleMapper, ContactSreetMapper, ContactNumberMapper, ContactPhoneMapper, \
@@ -9,7 +9,7 @@ from thuin.urban.dataimport.profiles.thuinAgorawin.mappers import LicenceFactory
     DecisionEventTypeMapper, DecisionDateMapper, NotificationDateMapper, DecisionMapper, \
     ErrorsMapper
 
-from thuin.urban.dataimport.access.mapper import AccessSimpleMapper as SimpleMapper
+from imio.urban.dataimport.access.mapper import AccessSimpleMapper as SimpleMapper
 
 OBJECTS_NESTING = [
     (

@@ -3,7 +3,7 @@
 
  <import-step
     id="thuin.urban.dataimport-thuinAgorawinImport"
-    handler="thuin.urban.dataimport.profiles.thuinAgorawin.importer.importThuinAgorawin"
+    handler="thuin.urban.dataimport.importer.importThuinAgorawin"
     title="Agorawin import for Thuin"
     version="2013-01-04T11:30:41.455297">
   Agorawin import for Thuin

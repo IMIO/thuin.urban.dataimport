@@ -2,10 +2,10 @@
 
 from zope.interface import implements
 
-from thuin.urban.dataimport.access.importer import AccessDataImporter
-from thuin.urban.dataimport.mapping import ValuesMapping, ObjectsMapping
-from thuin.urban.dataimport.profiles.thuinAgorawin.interfaces import IThuinDataImporter
-from thuin.urban.dataimport.profiles.thuinAgorawin import objectsmapping, valuesmapping
+from imio.urban.dataimport.access.importer import AccessDataImporter
+from imio.urban.dataimport.mapping import ValuesMapping, ObjectsMapping
+from thuin.urban.dataimport.interfaces import IThuinDataImporter
+from thuin.urban.dataimport import objectsmapping, valuesmapping
 
 
 class ThuinDataImporter(AccessDataImporter):
@@ -35,7 +35,7 @@ class ThuinValuesMapping(ValuesMapping):
 
 
 def importThuinAgorawin(context, db_name='tab_urba_97.mdb'):
-    if context.readDataFile('thuin_agorawin_marker.txt') is None:
+    if context.readDataFile('thuinurbandataimport_marker.txt') is None:
         return
 
     db = context.openDataFile(db_name)
