@@ -34,18 +34,4 @@
         handler=".setuphandlers.post_install">
     </genericsetup:importStep>
 
-    <adapter
-        for="thuin.urban.dataimport.interfaces.IThuinDataImporter"
-        factory=".importer.ThuinMapping"
-        provides="imio.urban.dataimport.interfaces.IObjectsMapping"
-        name="objects mapping"
-        />
-
-    <adapter
-        for="thuin.urban.dataimport.interfaces.IThuinDataImporter"
-        factory=".importer.ThuinValuesMapping"
-        provides="imio.urban.dataimport.interfaces.IValuesMapping"
-        name="values mapping"
-        />
-
 </configure>
