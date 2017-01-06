@@ -1,0 +1,14 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:five="http://namespaces.zope.org/five"
+    i18n_domain="thuin.urban.dataimport">
+
+
+    <adapter
+        for="imio.urban.dataimport.interfaces.IImportSettingsForm"
+        factory=".settings.LicencesImporterFromImportSettings"
+        provides="imio.urban.dataimport.urbaweb.interfaces.IUrbawebDataImporter"
+        name="Thuin licences"
+    />
+
+</configure>
