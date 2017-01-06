@@ -5,7 +5,8 @@ all: run
 .PHONY: bootstrap buildout run test cleanall
 bootstrap:
 	virtualenv-2.7 .
-	./bin/python bootstrap.py
+	./bin/easy_install -U setuptools==28.2.0
+	./bin/python bootstrap.py -v 2.5.3
 
 buildout:
 	if ! test -f bin/buildout;then make bootstrap;fi
