@@ -16,6 +16,7 @@
 
     <include package=".folderzone" />
     <include package=".licences" />
+    <include package=".opinionmakers" />
     <include package=".parcellings" />
 
     <!-- Register the installation GenericSetup extension profile -->

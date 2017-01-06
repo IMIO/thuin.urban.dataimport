@@ -1,0 +1,27 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:five="http://namespaces.zope.org/five"
+    i18n_domain="thuin.urban.dataimport">
+
+    <adapter
+        for="thuin.urban.dataimport.opinionmakers.importer.OpinionMakersImporter"
+        factory=".importer.OpinionMakersMapping"
+        provides="imio.urban.dataimport.interfaces.IObjectsMapping"
+        name="objects mapping"
+        />
+
+    <adapter
+        for="thuin.urban.dataimport.opinionmakers.importer.OpinionMakersImporter"
+        factory=".importer.OpinionMakersValuesMapping"
+        provides="imio.urban.dataimport.interfaces.IValuesMapping"
+        name="values mapping"
+        />
+
+    <adapter
+        for="imio.urban.dataimport.interfaces.IImportSettingsForm"
+        factory=".settings.OpinionMakersImporterFromImportSettings"
+        provides="imio.urban.dataimport.access.interfaces.IAccessImporter"
+        name="Thuin opinion makers"
+        />
+
+</configure>
